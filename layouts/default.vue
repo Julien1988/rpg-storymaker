@@ -2,8 +2,9 @@
 
 <template>
   <div>
-    Layout: default
-    <slot />
+    <TheHeader />
+    <NuxtPage />
+    <TheFooter />
   </div>
 </template>
 
