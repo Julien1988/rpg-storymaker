@@ -8,8 +8,9 @@ const supabase = useSupabaseClient();
 
 const uploading = ref(false);
 const src = ref("");
-const files = ref();
 
+const files = ref();
+console.log("ici", path.value);
 const downloadImage = async () => {
   try {
     const { data, error } = await supabase.storage
