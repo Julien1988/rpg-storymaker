@@ -1,7 +1,15 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const supabase = useSupabaseClient();
+const user = useSupabaseUser();
+const logout = () => {
+  supabase.auth.signOut();
+};
+</script>
 
 <template>
-  <header>Component: TheHeader</header>
+  <header>
+    <div v-if="user"><button @click="logout">Logout</button></div>
+  </header>
 </template>
 
 <style scoped></style>
