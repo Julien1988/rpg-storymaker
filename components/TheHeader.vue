@@ -8,7 +8,14 @@ const logout = () => {
 
 <template>
   <header>
-    <div v-if="user"><button @click="logout">Logout</button></div>
+    <div v-if="user">
+      <button
+        class="p-2 rounded bg-white text-blue-400 font-bold mr-2"
+        @click="logout"
+      >
+        Logout
+      </button>
+    </div>
   </header>
 </template>
 
