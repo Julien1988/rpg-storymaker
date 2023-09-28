@@ -7,7 +7,18 @@ const logout = () => {
 </script>
 
 <template>
-  <header>
+  <header class="py-6">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@400;600&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <NuxtLink to="/"
+      ><h1 class="text-4xl text-blue-400 titleSite">
+        RPG-STORYCART GENERATOR
+      </h1></NuxtLink
+    >
     <div v-if="user" class="flex flex-auto">
       <ul class="flex flex-auto">
         <li>
@@ -36,4 +47,11 @@ const logout = () => {
   </header>
 </template>
 
-<style scoped></style>
+<style>
+body {
+  font-family: "Martian Mono", monospace;
+}
+.titleSite {
+  font-family: "Permanent Marker", cursive;
+}
+</style>
