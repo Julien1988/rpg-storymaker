@@ -19,8 +19,8 @@ const logout = () => {
         RPG-STORYCART GENERATOR
       </h1></NuxtLink
     >
-    <div v-if="user" class="flex flex-auto">
-      <ul class="flex flex-auto">
+    <nav v-if="user" class="flex py-6">
+      <ul class="flex flex-auto items-center">
         <li>
           <NuxtLink
             class="p-2 rounded bg-white text-blue-400 font-bold mr-2"
@@ -43,7 +43,7 @@ const logout = () => {
       >
         Logout
       </button>
-    </div>
+    </nav>
   </header>
 </template>
 

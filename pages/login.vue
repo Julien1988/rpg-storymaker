@@ -11,7 +11,7 @@ const signInWithOtp = async () => {
     options: {
       /*TODO JBR : modifier en prod  http://localhost:3000/confirm */
       /* PROD : https://rpg-storycart.netlify.app/ */
-      emailRedirectTo: "https://rpg-storycart.netlify.app/",
+      emailRedirectTo: "http://localhost:3000/confirm",
     },
   });
   if (error) {
