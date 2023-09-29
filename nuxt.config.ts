@@ -8,11 +8,11 @@ export default defineNuxtConfig({
       callback: "/confirm",
       exclude: [],
     },
-    cookieOptions: {
+    /*cookieOptions: {
       maxAge: 60 * 60 * 8,
       sameSite: "lax",
       secure: true,
-    },
+    },*/
     clientOptions: {
       auth: {
         flowType: "pkce",
